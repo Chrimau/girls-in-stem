@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>my biography</title>
+       <link rel="stylesheet" href="styles.css">
+      <script src="script.js" defer></script> <!-- JS with defer -->
+    </head>
+<body>
+     <nav class="navbar">
+        <div class="logo">UOF</div>
+        <ul class="nav-links">
+      <ul>
+         <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+       <li><a href="form.html">Application</a></li>
+       <li><a href="table.html">Courses</a></li>
+      <li><a href="register.html">Register</a></li></ul> 
+          <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+      </nav>
+<body>
+      <section class="home">
+         <div id="go-home">
+           <a href="index.html">
+             <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
+           </a>
+         </div>
+         </section>
+    
+    <div class="video-container">
+        <!-- Background Image for Fallback -->
+        <img src="images/pexels-olly-813940.jpg" class="background-image" alt="Fallback Image">
+        <!-- Lazy-loaded background video -->
+        <video autoplay muted loop playsinline class="background-video" poster="images/pexels-olly-813940.jpg">
+            <source src="8487864-uhd_3840_2160_30fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Content on top of the video -->
+        <div class="content">
+            <h1>Empowering Women in STEM</h1>
+            <p>Innovating for a brighter tomorrow</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+     <h1>School and Courses</h1>
+    <table>
+        <tr>
+            <th>School</th>
+            <th>Courses</th>
+        </tr>
+         <tr><td colspan="2"><hr></td>
+         </tr> <tr>
+            <td>SOE</td>
+            <td>Backend</td>
+             <td>Frontend</td>
+     <td>Cloud</td>
+              <td>Cybersecurity</td>
+        </tr>
+        
+        <tr>
+            <td>SOP</td>
+            <td>Design</td>
+          <td>Marketing</td>
+            <td>Management</td>
+           
+        </tr>
+        <tr>
+            <td>SOD</td>
+            <td>Data Analysis</td>
+            <td>Data Science</td>
+            <td>Data Engineering</td>
+        </tr>
+    </table>
+      <section class="home">
+         <div id="go-home">
+           <a href="index.html">
+             <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
+           </a>
+         </div>
+         </section>
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
