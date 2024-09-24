@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>my biography</title>
+      <link href="style.css" rel="stylesheet" type="text/css"/>
+  <script src="script.js" defer></script> <!-- JS with defer -->
+</head>
+<body>
+  <ul>
+     <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+   <li><a href="form.html">Application</a></li>
+   <li><a href="table.html">Courses</a></li>
+   <li><a href="register.html">Register</a></li></ul> 
+
+   <section class="home">
+     <div id="go-home">
+       <a href="index.html">
+         <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
+       </a>
+     </div>
+     </section>
+  <h1>The fieldset element</h1>
+  <form>
+    <fieldset name="personal_details">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone"><br>
+    </fieldset>
+    <br>
+
+    <fieldset name="professional_details">
+      <label for="occupation">Occupation:</label>
+      <input type="text" id="occupation" name="occupation"><br>
+      <label for="company">Company:</label>
+      <input type="text" id="company" name="company"><br>
+      <label for="start">Start Date:</label>
+      <input type="date" id="start" name="start"><br>
+      <label for="end">End Date:</label>
+      <input type="date" id="end" name="end"><br>
+    </fieldset>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+  <section class="home">
+     <div id="go-home">
+       <a href="index.html">
+         <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
+       </a>
+     </div>
+     </section>
+  <script>
+      function toggleMenu() {
+          const navMenu = document.querySelector('.nav-menu');
+          navMenu.classList.toggle('active');
+      }
+  </script>
+</body>
+
+</html>
