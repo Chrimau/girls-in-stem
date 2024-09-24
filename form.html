@@ -1,0 +1,162 @@
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Form</title>
+        <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+         <nav class="navbar">
+            <div class="logo">UOF</div>
+            <ul class="nav-links">
+          <ul>
+             <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+           <li><a href="form.html">Application</a></li>
+           <li><a href="table.html">Courses</a></li>
+          <li><a href="register.html">Register</a></li></ul> 
+              <div class="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+          </nav>
+        
+           <section>
+            <div id="go-home">
+              <a href="index.html">
+                <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
+              </a>
+            </div>
+                  </section>
+        
+        <header class="doings">
+            <h1>Let's keep you Updated</h1></br>
+         <a href="index.html" class="cta-button">Our Newsletter</a>
+          </header>
+        
+          <form>
+              <table>
+                  <tr>
+    <td><label for="firstName">First Name:</label></td>
+<td><input type="text" id="firstName" name="firstName"></td>
+    <td><label for="lastName">Last Name:</label></td>
+                      <td><input type="text" id="lastName" name="lastName"></td>
+                  </tr>
+                  <tr>
+                      <td><label for="gender">Gender:</label></td>
+                      <td>
+                          <select id="gender" name="gender">
+                              <option value="male">Male</option>
+                              <option value="female">Female</option>
+                              <option value="other">Other</option>
+                          </select>
+                      </td>
+ <td><label for="dob">Date of Birth:</label></td>
+ <td><input type="date" id="dob" name="dob"></td>
+ </tr>
+<tr>
+ <td><label for="email">Email Address:</label></td>
+ <td><input type="email" id="email" name="email"></td>
+ <td><label for="phone">Phone Number:</label></td>
+  <td><input type="tel" id="phone" name="phone"></td>
+                  </tr>
+                  <tr>
+                      
+ <tr>
+ <td><label for="country">Country:</label></td>
+ <td>
+ <select id="country" name="country">
+ <option value="nigeria">Nigeria</option>
+<option value="ghana">Ghana</option>
+ <option value="kenya">Kenya</option>
+ <!-- Add more country options as needed -->
+</select>
+ </td>
+ <td><label for="state">State of Residence:</label></td>
+<td>
+ <select id="state" name="state">
+<option value="lagos">Lagos</option>
+<option value="abuja">Abuja</option>
+ <option value="kano">Kano</option>
+ <!-- Add more state options as needed -->
+</select>
+</td>
+</tr>
+<td><label for="password">Password:</label></td>
+ <td><input type="password" id="password" name="password"></td>
+ <td><label for="confirmPassword">Confirm Password:</label></td>
+ <td><input type="password" id="confirmPassword" name="confirmPassword"></td>
+                </tr>
+                  <tr>
+                      <td><label for="heardAboutUs">How did you hear about us?</label></td>
+ <td colspan="3">
+  <select id="heardAboutUs" name="heardAboutUs">
+    <option value="friend">Friend</option>
+     <option value="twitter">Twitter</option>
+    <option value="facebook">Facebook/option>
+    <option value="youtube">Youtube</option>
+   <option value="whatsapp">Whatsapp</option>
+ <option value="instagram>Instagram</option>
+ <option value="billboard">Billboard</option>
+ <option value="linkedin">LinkedIn</option>
+ </select>
+ </td>
+ </tr>
+              
+  <tr>
+  <td>
+       <label for="privacyPolicy">By clicking continue, I agree to <a href="terms.com">Terms of Use  </a> and acknowledge that I have read the the <a href="privacy.com">Privacy Policy</a></label>
+                                </td>
+                            </tr>
+               
+                  <tr>
+                      <td colspan="4">
+                          <button type="submit">Submit <span>&#8594;</span></button>
+                      </td>
+                  </tr>
+              </table>
+          </form>
+
+        <script>
+            function toggleMenu() {
+                const navMenu = document.querySelector('.nav-menu');
+                navMenu.classList.toggle('active');
+            }
+            // Array of background images
+            const images = [
+                'assets/pexels-willsantos-2026960.jpg',   // First image
+                'assets/pexels-juanpphotoandvideo-1250452.jpg',  // Second image
+                'images/pexels-elsimage-3941172.jpg',   // Third image
+                'images/woman9.png'   // Fourth image
+            ];
+
+            // Track the current image index
+            let currentIndex = 0;
+
+            // Get the doings section
+            const doings = document.querySelector('.doings');
+
+            // Set initial background image
+            doings.style.backgroundImage = `url(${images[currentIndex]})`;
+
+ function changeBackground() {
+                currentIndex = (currentIndex + 1) % images.length; // Move to the next image
+                const nextImage = images[currentIndex];
+            // Function to change the background image
+     
+        // Apply a smooth opacity transition without flashing the background
+                const fadeDiv = document.createElement('div');
+                fadeDiv.classList.add('fade-overlay');
+                fadeDiv.style.backgroundImage = `url(${nextImage})`;
+                document.body.appendChild(fadeDiv);
+
+setTimeout(() => {
+ doings.style.backgroundImage = `url(${nextImage})`;
+ fadeDiv.remove();  // Remove fade overlay after the transition
+ }, 1000);  // Transition duration matches the CSS opacity transition
+ }
+
+            setInterval(changeBackground, 5000);  // Change every 5 seconds
+        </script>
+      </body>
+      </html>
