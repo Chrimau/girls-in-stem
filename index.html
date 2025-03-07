@@ -9,25 +9,24 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="logo">UOF</div>
-    <ul class="nav-links">
-  <ul>
-     <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-   <li><a href="form.html">Application</a></li>
-   <li><a href="table.html">Courses</a></li>
-  <li><a href="register.html">Register</a></li></ul> 
-      <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-      </div>
-  </nav>
+  <header>
+    <div class="navbar">
+      <div class="logo">UOF</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#get-involved">Get Involved</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul> 
+        <div class="hamburger"></div>
+      </nav>
+    </div>
+  </header>
   <menu>
-   <li> <a href="#impactstories">Success Stories</a></li>
-    <li> <a href="#unitconversions">Conversions</a> </li>
-  </menu>
+  
   <header class="hero">
       <h1>Empowering Girls in STEM</h1> </br>
       <a href="#" class="cta-button">Join Us</a>
@@ -94,133 +93,39 @@ After completing the program, Sarah applied to several engineering colleges and 
       </div>
       <!-- Repeat cards as needed -->
   </section>
-
-  <section id="unitconversions">
-  <header id="unitconversions"><b>Unit Conversions</b>
-  </header>
-
-  <nav>
-    <a href="#temperature"><button>Temperature</button></a>
-    <a href="#weight"><button>Weight</button></a>
-    <a href="#distance"><button>Distance</button></a>
-  </nav>
-
-
-  <div id="all-conversion-sections">
-    <!-- This will have the conversion sections for Temperature, Weight, and Distance -->
-    <div id="all-conversion-sections">
-
-      <section class="temperature">
-        <div id="tmp">
-          <figure>
-            <img
-              src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png"
-              width="200px" />
-
-            <figcaption>Celsius to Fahreheit Conversion</figcaption>
-          </figure>
-
-          <article>
-            <!-- This contains the specific elements for temperature conversion -->
-            <fieldset>
-              <legend>Temperature</legend>
-              <!-- Label for Temperature input -->
-              <label for="Temperature">Celsius</label>
-              <br />
-              <input type="number" id="C"> <br />
-
-              <!-- The conversion button -->
-              <button id="temperature"> Convert </button> <br />
-
-              <!-- Label for Temperature output -->
-              <input type="number" id="f"><br />
-              <label for="Temperature">Fahrenheit</label>
-            </fieldset>
-          </article>
-
-          <aside>
-            To convert celsius to fahrenheit yourself, use this formula replacing the `c` with your temperature in
-            celsius: (c x 9/5) + 32
-            </aside>
-      </section>
-
-      <section class="weight">
-        <div id="wgt">
-          <figure>
-            <img
-              src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png"
-              width="200px" />
-
-            <figcaption> Kilograms to Pounds Conversion
-          </figure>
-
-          <article>
-            <fieldset>
-              <legend>Weight</legend>
-
-              <!-- Label for Distance input -->
-              <label for="weight">Kilograms</label> <br />
-              <input type="number" id="kg"> <br />
-
-              <!-- The conversion button -->
-              <button id="weight"> Convert </button> <br />
-
-              <!-- Label for Weight output -->
-              <input type="number" id="ibs"> <br />
-              <label for="weight">Pounds</label> <br />
-            </fieldset>
-          </article>
-          <aside>
-            To convert kilograms to pounds yourself, use this formula replacing the `kg` with your weight in kilograms:
-            kg x 2.205
-          </aside>
-      </section>
-
-      <section class="distance">
-        <div id="dst">
-          <figure>
-            <img
-              src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png"
-              width="200" px />
-
-            <figcaptuion>Kilometer to Mile Conversion</figcaption>
-          </figure>
-          <article>
-            <fieldset>
-              <legend>Distance</legend>
-              <label for="distance">Kilometers</label><br />
-              <input type="number" id="km"> <br />
-
-              <!-- The conversion button -->
-              <button id="distance"> Convert </button> <br />
-
-              <!-- Label for Distance output -->
-              <input type="number" id="m"> <br />
-              <label for="distance">Miles</label>
-            </fieldset>
-          </article>
-          <aside>
-            To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in
-            kilometers: km &divide; 1.609
-          </aside>
-      </div>
-      </section>
-
        <section class="home">
          <div id="go-home">
-      <a href="#">
-        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
+      <a href="#Home-section">
+        <img src="images/woman1.jpeg"/> alt="sarah's picture"
       </a>
     </div>
     </section>
        <b> Felling a bit lost? Take our <a href="#">hand</a></b>  
-    <footer>
-        <p>© 2024 UOF. All rights reserved.</p>
-        <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-        </ul>
-    </footer>
+        <footer>
+          <div class="container">
+            <div class="footer-links">
+              <a href="#">About Us</a>
+              <a href="#">Programs</a>
+              <a href="#">Get Involved</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Use</a>
+            </div>
+            <div class="social-media">
+              <a href="#">Facebook</a>
+              <a href="#">Twitter</a>
+              <a href="#">LinkedIn</a>
+              <a href="#">Instagram</a>
+            </div>
+            <form class="newsletter">
+              <label for="email">Stay updated on our latest programs and events!</label>
+              <input type="email" id="email" placeholder="Your Email">
+              <button type="submit">Subscribe</button>
+            </form>
+            <p>Contact us: info@uof.org | +123-456-7890</p>
+            <p>© 2024 UOF. All rights reserved.</p>
+          </div>
+        </footer>
+ 
     <script>
     function toggleMenu() {
     const navMenu = document.querySelector('.nav-menu');
