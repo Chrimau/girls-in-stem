@@ -405,3 +405,57 @@ footer a:hover {
         transform: translate(-50%, -50%); /* Keep the video centered */
     }
 }
+
+/* Newsletter Section This will style a newsletter section with a light grey background, centered text, and a form with an email input and a submit button */
+.newsletter {
+    background-color: #f8f8f8; /* Light grey background */
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.newsletter h2 {
+    font-size: 2em;
+    color: #001F3F; /* Navy Blue */
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #001F3F; /* Navy Blue */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #FFD700; /* Gold */
+}
